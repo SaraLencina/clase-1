@@ -112,8 +112,7 @@ aside > input{
     border-radius: 20px;
     background-color: rgb(107, 125, 140);
     border: none;
-
-    margin bottom:20px;
+    margin-bottom: 20px;
 }
 
 aside > input:focus {
