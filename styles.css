@@ -17,7 +17,7 @@ body {
     height: 100vh;
 }
 
-/*********************** NAVE ********************/
+/*********************** NAV ********************/
 nav {
     display: flex;
     flex-direction: column;
@@ -27,22 +27,34 @@ nav {
 
 }
 
-nav>ul{
+nav>div{
     display: flex;
     flex-direction:column ;
-    gap: 100%;
+
 }
+nav > div >  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
 nav > div > ul > li {
-    cursor: pointer;
-    color: rgb(0, 119, 255);
-    border-radius: 20px;
-    background-color: rgb(26, 146, 210, o.2);
+    padding: 10px
 }
-nav button { color: white;
+
+nav > div > ul > li:hover {
+    cursor: pointer;
+    color:#1da1f2;
+    border-radius: 20px;
+    background-color: rgb(26, 145, 218, 0.2);
+}
+nav button { 
+color: white;
 font-weight: bold;
 font-size: 1.1rem;
 
-padding: 20px 50px;
+padding: 20px;
 border-radius: 20px;
 border: none;
 background-color:#1da1f2;
@@ -52,13 +64,13 @@ transition: all 0.3s;
 
 nav button:hover {
     cursor: pointer;
-    background-color: rgb(26, 146, 210);
+    background-color: rgb(26, 145, 218);
 
 }
 
 /*********************** MAIN ********************/
 main {
-    border: 0,5px solid rgba(2, 2, 7, 0.685);
+    border: 0,5px solid#423e3e;
     height: 150%;
 }
 main header {
@@ -66,11 +78,11 @@ main header {
     justify-content: space-between;
     padding: 0,20px;
 }
+
 .tweets-box {
     display: flex;
     padding: 10px 20px;
-
-
+    border: 0.5px solid #423e3e;
 }
 .tweets-box >div:last-child { 
     width: 90%;
@@ -80,17 +92,38 @@ main header {
     width: 10%;
 
 }
+
+.tweets-box{
+    color: #ccc;
+} 
+
+.icons-wrapper {
+    display: flex;
+    justify-content: space-between
+}
+
+/*********************** ASIDE ********************/
+
+aside {
+    margin: 10px;
+}
 aside > input{
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: rgb(107, 126, 140);
+    background-color: rgb(107, 125, 140);
     border: none;
+
+    margin bottom:20px;
+}
+
+aside > input:focus {
+    outline: 0;
 }
 
 aside > div {
     padding: 20px;
     border-radius: 20px;
-    background-color: rgb(107, 126, 140);
+    background-color: rgb(107, 125, 140);
     height: 100%;
 
 
